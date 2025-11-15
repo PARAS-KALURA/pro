@@ -1,0 +1,13 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color: rgba(2, 1, 1, 0.943);
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
