@@ -4,10 +4,129 @@
 }
 
 :root{
-    --bg-color: rgba(2, 1, 1, 0.943);
+    --bg-color: hsla(0, 1%, 86%, 0.888);
+    --card-color: #f8f9fa;
+    --shirt-name: gray;
+    --amount--: black;
 }
 
 body{
     background-color: var(--bg-color);
 }
+
+header{
+    background-color: rgb(225, 222, 218);
+    padding: 10px;
+}
+
+nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   box-shadow: 10px 20px 5px rgb(230, 229, 228);
+   cursor: pointer;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 30px;
+}
+
+.card{
+    margin: 10px;
+    border-radius: 10px;
+    background-color: var(--card-color);
+    width: 250px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+
+ img{
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.info-1{
+    padding: 3px;
+}
+
+.brand{
+    text-align: center;
+}
+
+.desc{
+    padding-top: 3px;
+    color: var(--shirt-name);
+}
+
+.price{
+    padding-top: 4px;
+    font-weight: bold;
+}
+
+
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.cart-box{
+    background-color: var(--card-color);
+border-radius: 10px;
+
+}
+
+.cart-box h3{
+    padding: 10px;
+
+}
+
+.cart{
+    display: block;
+    padding: 20px 5px;
+}
+
+.desc .brand{
+    color: var(--amount--);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    transition: .3s;
+}
+
+.cart-box:hover {
+    animation: jiggle 0.3s ease-in-out;
+}
+
+@keyframes jiggle {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
