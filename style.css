@@ -78,6 +78,7 @@ main{
 .cart-box{
     background-color: var(--card-color);
 border-radius: 10px;
+margin-left: 10px;
 
 }
 
